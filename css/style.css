@@ -1,50 +1,5 @@
-@font-face {
-    font-family: 'Conv_BentonSans Condensed Bold';
-    src: url('/web/20210108095139im_/https://misterspoils.com/lp3/fonts/BentonSans Condensed Bold.eot');
-    src: local('☺'), url('/web/20210108095139im_/https://misterspoils.com/lp3/fonts/BentonSans Condensed Bold.woff') format('woff'), url('/web/20210108095139im_/https://misterspoils.com/lp3/fonts/BentonSans Condensed Bold.ttf') format('truetype'), url('/web/20210108095139im_/https://misterspoils.com/lp3/fonts/BentonSans Condensed Bold.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/*font-family:'Conv_BentonSans Condensed Bold',Sans-Serif;*/
-@font-face {
-    font-family: 'Conv_georgia';
-    src: url('/web/20210108095139im_/https://misterspoils.com/lp3/fonts/georgia.eot');
-    src: local('☺'), url('/web/20210108095139im_/https://misterspoils.com/lp3/fonts/georgia.woff') format('woff'), url('/web/20210108095139im_/https://misterspoils.com/lp3/fonts/georgia.ttf') format('truetype'), url('/web/20210108095139im_/https://misterspoils.com/lp3/fonts/georgia.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/*font-family:'Conv_georgia',Sans-Serif;*/
-
-@font-face {
-    font-family: 'Georgia';
-    src: url('/web/20210108095139im_/https://misterspoils.com/lp3/fonts/Georgia-Italic.eot');
-    src: url('/web/20210108095139im_/https://misterspoils.com/lp3/fonts/Georgia-Italic.eot#iefix') format('embedded-opentype'),
-        url('/web/20210108095139im_/https://misterspoils.com/lp3/fonts/Georgia-Italic.woff2') format('woff2'),
-        url('/web/20210108095139im_/https://misterspoils.com/lp3/fonts/Georgia-Italic.woff') format('woff'),
-        url('/web/20210108095139im_/https://misterspoils.com/lp3/fonts/Georgia-Italic.ttf') format('truetype'),
-        url('/web/20210108095139im_/https://misterspoils.com/lp3/fonts/Georgia-Italic.svg#Georgia-Italic') format('svg');
-    font-weight: normal;
-    font-style: italic;
-}
-
-/*font-family: 'Georgia'; font-weight: normal; font-style: italic;*/
-
-
-@font-face {
-    font-family: 'ProximaNova';
-    src: url('/web/20210108095139im_/https://misterspoils.com/lp3/fonts/ProximaNova-Medium.eot');
-    src: url('/web/20210108095139im_/https://misterspoils.com/lp3/fonts/ProximaNova-Medium.eot#iefix') format('embedded-opentype'),
-        url('/web/20210108095139im_/https://misterspoils.com/lp3/fonts/ProximaNova-Medium.woff2') format('woff2'),
-        url('/web/20210108095139im_/https://misterspoils.com/lp3/fonts/ProximaNova-Medium.woff') format('woff'),
-        url('/web/20210108095139im_/https://misterspoils.com/lp3/fonts/ProximaNova-Medium.ttf') format('truetype'),
-        url('/web/20210108095139im_/https://misterspoils.com/lp3/fonts/ProximaNova-Medium.svg#ProximaNova-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-}
-
-/*font-family: 'ProximaNova'; font-weight: 500; font-style: normal;*/
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Readex+Pro&display=swap');
 
 *,
 *:before,
@@ -58,7 +13,7 @@
 body {
     background: #fff;
     line-height: 1.8;
-    font-family: 'Conv_georgia', Sans-Serif;
+    font-family: 'Readex Pro', Sans-Serif;
     font-size: 16px;
     font-weight: normal;
 }
@@ -73,11 +28,13 @@ img {
     padding: 0 15px;
     margin: 0 auto;
 }
-.containerfull{
+
+.containerfull {
     padding: 0 15px;
     margin: 0 auto;
     width: 100%;
 }
+
 .containermd {
     max-width: 800px;
     padding: 0 15px;
@@ -131,7 +88,7 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: 'Conv_BentonSans Condensed Bold', Sans-Serif;
+    font-family: 'Ubuntu', Sans-Serif;
     color: #000;
 }
 
@@ -214,7 +171,7 @@ a:hover {
 
 .emailpart a,
 .logoutpart a {
-    font-family: 'Conv_BentonSans Condensed Bold', Sans-Serif;
+    font-family: 'Ubuntu', Sans-Serif;
     font-size: 16px;
 }
 
@@ -255,7 +212,7 @@ a:hover {
     height: 46px;
     color: #666;
     width: 100%;
-    font-family: 'Conv_georgia', Sans-Serif;
+    font-family: 'Readex Pro', Sans-Serif;
     font-weight: normal;
 }
 
@@ -274,7 +231,7 @@ a:hover {
 }
 
 .btnsubmit {
-    font-family: 'Conv_BentonSans Condensed Bold', Sans-Serif;
+    font-family: 'Ubuntu', Sans-Serif;
     color: #000;
     height: 46px;
     font-size: 16px;
@@ -318,10 +275,12 @@ a:hover {
     max-width: 390px;
     margin: 0 auto;
 }
-.webiframe{
+
+.webiframe {
     width: 100%;
     height: 100%;
 }
+
 .iframeholder {
     position: absolute;
     z-index: 9;
@@ -332,13 +291,13 @@ a:hover {
     padding: 102px 22px 44px 20px;
 }
 
-.iframeholder > iframe {
-    border-radius:0 0 28px 28px;
+.iframeholder>iframe {
+    border-radius: 0 0 28px 28px;
 }
 
 .iphonetext {
     color: #000;
-    font-family: 'Conv_BentonSans Condensed Bold', Sans-Serif;
+    font-family: 'Ubuntu', Sans-Serif;
     font-size: 16px;
     position: absolute;
     -webkit-transform: rotate(90deg) translateY(-50%);
@@ -354,10 +313,12 @@ a:hover {
 .displaymob {
     display: none;
 }
+
 #notification-message {
     color: white;
     background-color: black;
 }
+
 /*===referraltop========*/
 .referraltop {
     padding-top: 80px;
@@ -399,7 +360,7 @@ a:hover {
 .referralurl a {
     font-size: 24px;
     color: #000;
-    font-family: 'Conv_BentonSans Condensed Bold', Sans-Serif;
+    font-family: 'Ubuntu', Sans-Serif;
     line-height: 1.2;
 }
 
@@ -408,7 +369,7 @@ a:hover {
 }
 
 .copytoclipboard {
-    font-family: 'Conv_BentonSans Condensed Bold', Sans-Serif;
+    font-family: 'Ubuntu', Sans-Serif;
     font-size: 16px;
     color: #fff;
     background: #000;
@@ -460,9 +421,11 @@ a:hover {
     text-align: center;
     padding-bottom: 25px;
 }
-.thegoodslist a{
+
+.thegoodslist a {
     display: inline-block;
 }
+
 .productimg img {
     width: 276px;
     height: 276px;
@@ -483,7 +446,8 @@ a:hover {
     -webkit-transform: scale(0.8);
     transform: scale(0.8);
 }
-.productimg:hover img{
+
+.productimg:hover img {
     /*width: 160px;
     height: 160px;*/
     -webkit-transition: all ease-in-out 0.5s;
@@ -491,6 +455,7 @@ a:hover {
     -webkit-transform: scale(1);
     transform: scale(1);
 }
+
 .thegoodslist p {
     font-family: 'Georgia', Sans-Serif;
     font-weight: normal;
@@ -509,8 +474,8 @@ a:hover {
 }
 
 .leese {
-    padding: 0px!important;
-    border-radius: 0px!important;
+    padding: 0px !important;
+    border-radius: 0px !important;
     /* width: 400px!important;
     height: 350px!important; */
 }
@@ -533,6 +498,7 @@ a:hover {
     -ms-transition: all ease-in-out 0.5s;
     transition: all ease-in-out 0.5s;
 }
+
 /* quote display */
 
 .quotes {
@@ -543,7 +509,7 @@ a:hover {
     margin: 25px 0 40px;
     color: #000;
     text-align: center;
-  }
+}
 
 /*=======================pdpn===================*/
 /*===============responsive=====================*/
@@ -573,7 +539,8 @@ a:hover {
         padding: 85px 48px 0px 17px;
         height: 640px;
     }
-    .iframeholder > iframe {
+
+    .iframeholder>iframe {
         border-radius: 0 0 26px 23px;
     }
 }
@@ -710,7 +677,7 @@ a:hover {
 
     .iphonetoptext {
         color: #000;
-        font-family: 'Conv_BentonSans Condensed Bold', Sans-Serif;
+        font-family: 'Ubuntu', Sans-Serif;
         font-size: 14px;
         padding-bottom: 5px;
     }
@@ -827,13 +794,16 @@ a:hover {
     .headerinn:before {
         display: none;
     }
-    .iphonemobile{
+
+    .iphonemobile {
         text-align: center;
     }
-    .iphonemobile img{
+
+    .iphonemobile img {
         display: block;
     }
-    .mainpart{
+
+    .mainpart {
         padding-bottom: 0;
     }
 
@@ -929,7 +899,8 @@ a:hover {
     .referraltop h1 {
         font-size: 22px;
     }
-        .textcontent {
+
+    .textcontent {
         padding: 0;
     }
 
@@ -958,6 +929,7 @@ a:hover {
         font-size: 15px;
         margin: 10px 0 25px;
     }
+
     /* phone image display */
     .iphonemobile {
         height: 490px;
@@ -991,9 +963,10 @@ a:hover {
         padding-top: 40px;
     }
 
-    .listpart h2{
+    .listpart h2 {
         display: none;
     }
+
     /* end */
 }
 
@@ -1045,42 +1018,24 @@ a:hover {
 
 
 @supports (-webkit-overflow-scrolling: touch) {
-  .mobileiphone{
-        background: rgba(0,0,0,0);
+    .mobileiphone {
+        background: rgba(0, 0, 0, 0);
     }
+
     .mobileiphone {
         width: 290px;
     }
+
     .iframeholder {
         top: 60px;
-        bottom:50px;
+        bottom: 50px;
         padding: 0px 17px 0px 16px;
         height: 490px;
         overflow: auto;
         -webkit-overflow-scrolling: touch;
     }
+
     .headerinn:before {
         display: none;
     }
 }
-
-/*
-     FILE ARCHIVED ON 09:51:39 Jan 08, 2021 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 21:42:02 May 20, 2023.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
-/*
-playback timings (ms):
-  captures_list: 134.585
-  exclusion.robots: 0.241
-  exclusion.robots.policy: 0.228
-  RedisCDXSource: 20.725
-  esindex: 0.011
-  LoadShardBlock: 91.516 (3)
-  PetaboxLoader3.datanode: 100.615 (4)
-  load_resource: 202.103
-  PetaboxLoader3.resolve: 74.89
-*/
