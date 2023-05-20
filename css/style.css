@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Readex+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 *,
 *:before,
@@ -13,7 +12,7 @@
 body {
     background: #fff;
     line-height: 1.8;
-    font-family: 'Readex Pro', Sans-Serif;
+    font-family: 'Open Sans', Sans-Serif;
     font-size: 16px;
     font-weight: normal;
 }
@@ -88,7 +87,7 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: 'Ubuntu', Sans-Serif;
+    font-family: 'Open Sans', Sans-Serif;
     color: #000;
     font-weight: 700;
 }
@@ -172,7 +171,7 @@ a:hover {
 
 .emailpart a,
 .logoutpart a {
-    font-family: 'Ubuntu', Sans-Serif;
+    font-family: 'Open Sans', Sans-Serif;
     font-size: 16px;
 }
 
@@ -212,7 +211,7 @@ a:hover {
     height: 46px;
     color: #666;
     width: 100%;
-    font-family: 'Readex Pro', Sans-Serif;
+    font-family: 'Open Sans', Sans-Serif;
     font-weight: normal;
 }
 
@@ -231,7 +230,7 @@ a:hover {
 }
 
 .btnsubmit {
-    font-family: 'Ubuntu', Sans-Serif;
+    font-family: 'Open Sans', Sans-Serif;
     color: #000;
     height: 46px;
     font-size: 16px;
@@ -297,7 +296,7 @@ a:hover {
 
 .iphonetext {
     color: #000;
-    font-family: 'Ubuntu', Sans-Serif;
+    font-family: 'Open Sans', Sans-Serif;
     font-size: 16px;
     position: absolute;
     -webkit-transform: rotate(90deg) translateY(-50%);
@@ -360,7 +359,7 @@ a:hover {
 .referralurl a {
     font-size: 24px;
     color: #000;
-    font-family: 'Ubuntu', Sans-Serif;
+    font-family: 'Open Sans', Sans-Serif;
     line-height: 1.2;
 }
 
@@ -369,7 +368,7 @@ a:hover {
 }
 
 .copytoclipboard {
-    font-family: 'Ubuntu', Sans-Serif;
+    font-family: 'Open Sans', Sans-Serif;
     font-size: 16px;
     color: #fff;
     background: #000;
@@ -677,7 +676,7 @@ a:hover {
 
     .iphonetoptext {
         color: #000;
-        font-family: 'Ubuntu', Sans-Serif;
+        font-family: 'Open Sans', Sans-Serif;
         font-size: 14px;
         padding-bottom: 5px;
     }
