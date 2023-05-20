@@ -114,6 +114,7 @@ img {
 }
 
 .headerinn:before {
+    color: #111;
     position: absolute;
     z-index: 10;
     bottom: 0;
