@@ -48,6 +48,11 @@ ul {
     position: relative;
 }
 
+.headersample {
+    background: #fff;
+    position: relative;
+}
+
 .headermain:after {
     position: absolute;
     z-index: 9;
