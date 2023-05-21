@@ -92,12 +92,6 @@ h5 {
     font-weight: 800;
 }
 
-h1 {
-    font-size: 36px;
-    margin: 0 0 30px;
-    font-weight: 800;
-}
-
 h2 {
     font-size: 16px;
     margin: 0 0 20px;
@@ -323,10 +317,6 @@ a:hover {
     padding-top: 80px;
 }
 
-.referraltop h1 {
-    text-align: center;
-}
-
 .textreferral {
     text-align: center;
 }
@@ -522,10 +512,6 @@ a:hover {
         padding: 123px 30px 0px 0px;
     }
 
-    .leftcontent h1 {
-        font-size: 30px;
-    }
-
     .iphonescreen {
         padding: 0 30px 0 0;
     }
@@ -547,10 +533,6 @@ a:hover {
 @media screen and (max-width:991px) {
     /*.container {
         max-width: 680px;
-    }
-
-    .leftcontent h1 {
-        font-size: 24px;
     }
 
     .iphonescreen {
@@ -633,11 +615,6 @@ a:hover {
         max-width: 530px;
         margin: 0 auto;
         padding: 0;
-    }
-
-    .leftcontent h1 {
-        text-align: center;
-        font-size: 36px;
     }
 
     .logo {
@@ -851,10 +828,6 @@ a:hover {
 
 
 @media screen and (max-width:575px) {
-    .leftcontent h1 {
-        font-size: 30px;
-    }
-
     .mainpart .container,
     .containersm {
         max-width: 430px;
@@ -864,10 +837,6 @@ a:hover {
     .btnsubmit {
         font-size: 22px;
     }*/
-
-    .referraltop h1 {
-        font-size: 30px;
-    }
 
     .referralurl a {
         font-size: 18px;
@@ -893,11 +862,6 @@ a:hover {
 }
 
 @media screen and (max-width:479px) {
-
-    .leftcontent h1,
-    .referraltop h1 {
-        font-size: 22px;
-    }
 
     .textcontent {
         padding: 0;
@@ -970,11 +934,6 @@ a:hover {
 }
 
 @media screen and (max-width:359px) {
-
-    .leftcontent h1,
-    .referraltop h1 {
-        font-size: 19px;
-    }
 
     .mainpart .container,
     .containersm {
