@@ -35,6 +35,10 @@ img {
     width: 100%;
 }
 
+ul {
+    margin-left: 50px;
+}
+
 .containermd {
     max-width: 800px;
     padding: 0 15px;
