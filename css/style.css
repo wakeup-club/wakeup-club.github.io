@@ -95,6 +95,20 @@ h2 {
     font-weight: 700;
 }
 
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    color: #404040;
+    font-size: 32px;
+
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    color: #404040;
+    font-size: 38px;
+
+}
+
 .logo {
     text-align: center;
     padding: 15px 0 15px;
