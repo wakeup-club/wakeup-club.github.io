@@ -1,7 +1,7 @@
 body {
     background: #fff;
     line-height: 1.8;
-    font-family: 'Open Sans', Sans-Serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
 
@@ -79,7 +79,7 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: 'Open Sans', Sans-Serif;
+    font-family: 'Open Sans', sans-serif;
     color: #111;
     font-weight: 700;
     margin-bottom: 1.5rem;
@@ -153,7 +153,7 @@ a:hover {
 
 .emailpart a,
 .logoutpart a {
-    font-family: 'Open Sans', Sans-Serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
 
@@ -193,7 +193,7 @@ a:hover {
     height: 46px;
     color: #666;
     width: 100%;
-    font-family: 'Open Sans', Sans-Serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: normal;
 }
 
@@ -212,7 +212,7 @@ a:hover {
 }
 
 .btnsubmit {
-    font-family: 'Open Sans', Sans-Serif;
+    font-family: 'Open Sans', sans-serif;
     color: #000;
     height: 46px;
     font-size: 16px;
@@ -278,7 +278,7 @@ a:hover {
 
 .iphonetext {
     color: #000;
-    font-family: 'Open Sans', Sans-Serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     position: absolute;
     -webkit-transform: rotate(90deg) translateY(-50%);
@@ -337,7 +337,7 @@ a:hover {
 .referralurl a {
     font-size: 24px;
     color: #000;
-    font-family: 'Open Sans', Sans-Serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.2;
 }
 
@@ -346,7 +346,7 @@ a:hover {
 }
 
 .copytoclipboard {
-    font-family: 'Open Sans', Sans-Serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     color: #fff;
     background: #000;
@@ -434,7 +434,7 @@ a:hover {
 }
 
 .thegoodslist p {
-    font-family: 'Georgia', Sans-Serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: normal;
     font-style: italic;
     margin-bottom: 10px;
@@ -459,7 +459,7 @@ a:hover {
 
 .referralbottom {
     text-align: center;
-    font-family: 'ProximaNova', Sans-Serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     font-size: 13px;
     font-style: normal;
@@ -641,7 +641,7 @@ a:hover {
 
     .iphonetoptext {
         color: #000;
-        font-family: 'Open Sans', Sans-Serif;
+        font-family: 'Open Sans', sans-serif;
         font-size: 14px;
         padding-bottom: 5px;
     }
@@ -873,7 +873,7 @@ a:hover {
     }
 
     .headermain img {
-        width: 75%;
+        width: 45%;
     }
 
     .quotes {
