@@ -94,7 +94,7 @@ h2 {
 .logo {
     text-align: center;
     padding: 15px 0 15px;
-    width: 314px;
+    width: 200px;
     margin: 0 auto;
 }
 
@@ -607,10 +607,6 @@ a:hover {
 
     .logo {
         padding: 20px 0 12px;
-    }
-
-    .textcontent {
-        text-align: center;
     }
 
     /*.formcontrol,
