@@ -15,7 +15,6 @@ body {
     line-height: 1.8;
     font-family: 'Open Sans', Sans-Serif;
     font-size: 16px;
-    font-weight: normal;
 }
 
 img {
@@ -94,7 +93,7 @@ h4,
 h5 {
     font-family: 'Open Sans', Sans-Serif;
     color: #111;
-    font-weight: 700;
+    font-weight: bolder;
     margin-bottom: 1.5rem;
 }
 
