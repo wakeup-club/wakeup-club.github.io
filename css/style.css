@@ -817,6 +817,14 @@ a:hover {
 
 @media screen and (max-width:575px) {
 
+    .h1 {
+        font-size: 26px;
+    }
+
+    .h1 {
+        font-size: 22px;
+    }
+
     .mainpart .container,
     .containersm {
         max-width: 430px;
