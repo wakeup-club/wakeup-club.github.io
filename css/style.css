@@ -231,14 +231,8 @@ a:hover {
 }
 
 .listpart {
-    padding-top: 100px;
+    padding-top: 30px;
 }
-
-.listpart h2 {
-    text-align: center;
-    margin-bottom: 0;
-}
-
 
 .colright {
     flex: 0 0 45%;
@@ -479,13 +473,12 @@ a:hover {
 /* quote display */
 
 .quotes {
-    font-size: 16px;
+    font-size: 18px;
     font-style: italic;
     font-weight: normal;
     height: 38px;
     margin: 25px 0 40px;
-    color: #000;
-    text-align: center;
+    color: #111;
 }
 
 /*=======================pdpn===================*/
