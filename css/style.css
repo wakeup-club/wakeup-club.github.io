@@ -1,30 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-
-*,
-*:before,
-*:after {
-    outline: none;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     background: #fff;
     line-height: 1.8;
-    font-family: 'Open Sans', Sans-Serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    font-weight: normal;
 }
 
 img {
     max-width: 100%;
-    width: 400px;
 }
 
 .container {
-    max-width: 1290px;
+    max-width: 1050px;
     padding: 0 15px;
+    margin: 0 auto;
+}
+
+.containersample {
+    max-width: 1050px;
+    padding: 0 5px;
     margin: 0 auto;
 }
 
@@ -32,6 +25,10 @@ img {
     padding: 0 15px;
     margin: 0 auto;
     width: 100%;
+}
+
+ul {
+    margin-left: 20px;
 }
 
 .containermd {
@@ -53,6 +50,11 @@ img {
 
 .headermain {
     background: #111;
+    position: relative;
+}
+
+.headersample {
+    background: #fff;
     position: relative;
 }
 
@@ -82,42 +84,47 @@ img {
     display: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-family: 'Open Sans', Sans-Serif;
-    color: #000;
+h1 {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    color: #111;
     font-weight: 700;
 }
 
-h1 {
-    font-size: 36px;
-    margin: 0 0 30px;
-    font-weight: normal;
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    color: #111;
+    font-weight: 700;
 }
 
-h2 {
-    font-size: 16px;
-    margin: 0 0 20px;
-    font-weight: normal;
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    color: #404040;
+    font-size: 24px;
+    font-weight: 800;
+
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    color: #404040;
+    font-size: 28px;
+    font-weight: 800;
 }
 
 .logo {
     text-align: center;
     padding: 15px 0 15px;
-    width: 314px;
+    width: 200px;
     margin: 0 auto;
 }
 
-p {
-    margin-bottom: 25px;
-}
-
-
 a {
-    color: #000;
+    color: #111;
     text-decoration: none;
 }
 
@@ -171,12 +178,12 @@ a:hover {
 
 .emailpart a,
 .logoutpart a {
-    font-family: 'Open Sans', Sans-Serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
 
 .leftcontent {
-    padding: 50px 0px 0 50px;
+    padding: 166px 0px 0 50px;
     display: flex;
     justify-content: center;
 }
@@ -187,7 +194,7 @@ a:hover {
 }
 
 .signuppart {
-    padding: 60px 0 0;
+    padding: 0px 0 0;
 }
 
 .formgroup {
@@ -211,7 +218,7 @@ a:hover {
     height: 46px;
     color: #666;
     width: 100%;
-    font-family: 'Open Sans', Sans-Serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: normal;
 }
 
@@ -230,7 +237,7 @@ a:hover {
 }
 
 .btnsubmit {
-    font-family: 'Open Sans', Sans-Serif;
+    font-family: 'Open Sans', sans-serif;
     color: #000;
     height: 46px;
     font-size: 16px;
@@ -249,14 +256,8 @@ a:hover {
 }
 
 .listpart {
-    padding-top: 100px;
+    padding-top: 30px;
 }
-
-.listpart h2 {
-    text-align: center;
-    margin-bottom: 0;
-}
-
 
 .colright {
     flex: 0 0 45%;
@@ -265,7 +266,7 @@ a:hover {
 }
 
 .rightcontent {
-    padding: 130px 0px 0px 15px;
+    padding: 30px 0px 30px 0px;
 }
 
 .iphonescreen {
@@ -296,7 +297,7 @@ a:hover {
 
 .iphonetext {
     color: #000;
-    font-family: 'Open Sans', Sans-Serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     position: absolute;
     -webkit-transform: rotate(90deg) translateY(-50%);
@@ -321,10 +322,6 @@ a:hover {
 /*===referraltop========*/
 .referraltop {
     padding-top: 80px;
-}
-
-.referraltop h1 {
-    text-align: center;
 }
 
 .textreferral {
@@ -359,7 +356,7 @@ a:hover {
 .referralurl a {
     font-size: 24px;
     color: #000;
-    font-family: 'Open Sans', Sans-Serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.2;
 }
 
@@ -368,7 +365,7 @@ a:hover {
 }
 
 .copytoclipboard {
-    font-family: 'Open Sans', Sans-Serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     color: #fff;
     background: #000;
@@ -456,7 +453,7 @@ a:hover {
 }
 
 .thegoodslist p {
-    font-family: 'Georgia', Sans-Serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: normal;
     font-style: italic;
     margin-bottom: 10px;
@@ -481,7 +478,7 @@ a:hover {
 
 .referralbottom {
     text-align: center;
-    font-family: 'ProximaNova', Sans-Serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     font-size: 13px;
     font-style: normal;
@@ -501,13 +498,12 @@ a:hover {
 /* quote display */
 
 .quotes {
-    font-size: 16px;
+    font-size: 18px;
     font-style: italic;
     font-weight: normal;
     height: 38px;
     margin: 25px 0 40px;
-    color: #000;
-    text-align: center;
+    color: #111;
 }
 
 /*=======================pdpn===================*/
@@ -520,10 +516,6 @@ a:hover {
 
     .leftcontent {
         padding: 123px 30px 0px 0px;
-    }
-
-    .leftcontent h1 {
-        font-size: 30px;
     }
 
     .iphonescreen {
@@ -547,10 +539,6 @@ a:hover {
 @media screen and (max-width:991px) {
     /*.container {
         max-width: 680px;
-    }
-
-    .leftcontent h1 {
-        font-size: 24px;
     }
 
     .iphonescreen {
@@ -635,17 +623,8 @@ a:hover {
         padding: 0;
     }
 
-    .leftcontent h1 {
-        text-align: center;
-        font-size: 36px;
-    }
-
     .logo {
         padding: 20px 0 12px;
-    }
-
-    .textcontent {
-        text-align: center;
     }
 
     /*.formcontrol,
@@ -669,14 +648,12 @@ a:hover {
     }
 
     .listpart {
-        max-width: 350px;
         margin: 0 auto;
-        text-align: center;
     }
 
     .iphonetoptext {
         color: #000;
-        font-family: 'Open Sans', Sans-Serif;
+        font-family: 'Open Sans', sans-serif;
         font-size: 14px;
         padding-bottom: 5px;
     }
@@ -691,10 +668,6 @@ a:hover {
 
     .listpart {
         padding-top: 60px;
-    }
-
-    .listpart h2 {
-        font-size: 18px;
     }
 
     .rightcontent {
@@ -851,9 +824,6 @@ a:hover {
 
 
 @media screen and (max-width:575px) {
-    .leftcontent h1 {
-        font-size: 30px;
-    }
 
     .mainpart .container,
     .containersm {
@@ -864,10 +834,6 @@ a:hover {
     .btnsubmit {
         font-size: 22px;
     }*/
-
-    .referraltop h1 {
-        font-size: 30px;
-    }
 
     .referralurl a {
         font-size: 18px;
@@ -894,9 +860,21 @@ a:hover {
 
 @media screen and (max-width:479px) {
 
-    .leftcontent h1,
-    .referraltop h1 {
-        font-size: 22px;
+    h1 {
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 26px;
+        color: #111;
+        font-weight: 700;
+    }
+    
+    h2 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        color: #111;
+        font-weight: 700;
     }
 
     .textcontent {
@@ -913,7 +891,7 @@ a:hover {
 
     .mainpart .container,
     .containersm {
-        max-width: 330px;
+        padding: 15px;
     }
 
     .headermain {
@@ -921,7 +899,7 @@ a:hover {
     }
 
     .headermain img {
-        width: 75%;
+        width: 65%;
     }
 
     .quotes {
@@ -962,19 +940,28 @@ a:hover {
         padding-top: 40px;
     }
 
-    .listpart h2 {
-        display: none;
-    }
-
     /* end */
 }
 
 @media screen and (max-width:359px) {
 
-    .leftcontent h1,
-    .referraltop h1 {
-        font-size: 19px;
+    h1 {
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 26px;
+        color: #111;
+        font-weight: 700;
     }
+    
+    h2 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        color: #111;
+        font-weight: 700;
+    }
+
 
     .mainpart .container,
     .containersm {
