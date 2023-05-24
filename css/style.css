@@ -49,7 +49,7 @@ ul {
 }
 
 .headermain {
-    background: #111;
+    background: #ffffff;
     position: relative;
 }
 
@@ -71,7 +71,7 @@ ul {
 }
 
 .headerinn:before {
-    color: #111;
+    color: #ffffff;
     position: absolute;
     z-index: 10;
     bottom: 0;
