@@ -505,6 +505,14 @@ a:hover {
     color: #111;
 }
 
+#grad1 {
+    height: 12px;
+    background-color: red;
+    /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #7b2878, #d81535, #f27c0e, #f8d404);
+}
+
+
 /*=======================pdpn===================*/
 /*===============responsive=====================*/
 
@@ -868,7 +876,7 @@ a:hover {
         color: #111;
         font-weight: 700;
     }
-    
+
     h2 {
         font-family: 'Open Sans', sans-serif;
         font-size: 20px;
@@ -953,7 +961,7 @@ a:hover {
         color: #111;
         font-weight: 700;
     }
-    
+
     h2 {
         font-family: 'Open Sans', sans-serif;
         font-size: 20px;
