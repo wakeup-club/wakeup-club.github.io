@@ -4911,6 +4911,30 @@
                                                             possible.<br><br>If you know of anyone that might want to
                                                             reserve their WakeUp Cup too, please spread the word!</p>
                                                     </div>
+                                                    <p><button>Share WakeUp Cups</button></p>
+
+                                                    <p class="result"></p>
+
+                                                    <script>
+                                                        let shareData = {
+                                                            title: 'WakeUp Cups',
+                                                            text: 'Check out the best alarm clock ever made',
+                                                            url: 'https://go.wakeupcups.com/prelaunch?utm_source=shareButton',
+                                                        }
+
+                                                        const btn = document.querySelector('button');
+                                                        const resultPara = document.querySelector('.result');
+
+                                                        btn.addEventListener('click', () => {
+                                                            navigator.share(shareData)
+                                                                .then(() =>
+                                                                    resultPara.textContent = 'Shared successfully'
+                                                                )
+                                                                .catch((e) =>
+                                                                    resultPara.textContent = 'That didn\'t work for some reason - try copying and pasting this link: go.wakeupcups.com/prelaunch'
+                                                                )
+                                                        });
+                                                    </script>
                                                     <style>
                                                         #cta_160882 .cf-element[data-element-id="5229395"] .cf-text-element {}
 
@@ -7675,8 +7699,10 @@
                     <img style="width: 11px !important; transition: all 0.2s ease 0s !important; left: 0px !important; right: 0px !important; float: left !important; margin-left: 2px !important; margin-right: 2px !important; margin-top: 4px !important;"
                         src="https://img.convertflow.co/static/convertflow-crafted-in-icon-white.png"><span
                         style="float: right; font-size: 10px !important; font-family: inherit !important; color: inherit !important; letter-spacing: inherit !important;">Crafted
-                        in ConvertFlow</span></div>
-            </a></div>
+                        in ConvertFlow</span>
+                </div>
+            </a>
+        </div>
     </div>
     <script src="https://js.convertflow.co/production/websites/60561.js"></script>
 
