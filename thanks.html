@@ -129,19 +129,19 @@
 
                 const itemTitle = findFirstChildByClass(itemContainer, 'item-title')
                 if (itemTitle) {
-                  shareData.title = itemTitle.textContent
+                  shareData.title = 'WakeUp Cups'
                 }
 
                 const itemText = findFirstChildByClass(itemContainer, 'item-text')
                 if (itemText) {
-                  shareData.text = itemText.textContent
+                  shareData.text = 'Check out the best alarm clock ever made'
                 }
 
                 const itemUrl = findFirstChildByClass(itemContainer, 'item-url')
                 if (itemUrl) {
-                  shareData.url = itemUrl.href
+                  shareData.url = 'https://go.wakeupcups.com/prelaunch?utm_source=shareButton'
                 } else {
-                  shareData.url = window.location.href
+                  shareData.url = 'https://go.wakeupcups.com/prelaunch?utm_source=shareButton'
                 }
 
                 try {
