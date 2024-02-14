@@ -63,28 +63,6 @@
     <script type="text/javascript" charset="utf-8"
         src="https://trackcmp.net/t_prism_sitemessages.php?trackid=802016801&amp;prismid=195db664-a995-4166-95ab-a83f47f4e900&amp;url=https%3A%2F%2Fgo.wakeupcups.com%2Fthank-you"
         async=""></script>
-    <script>
-        const shareButton = document.querySelector('button');
-        const overlay = document.querySelector('.overlay');
-        const shareModal = document.querySelector('.share');
-
-        const title = window.document.title;
-        const url = window.document.location.href;
-
-        shareButton.addEventListener('click', () => {
-            if (navigator.share) {
-                navigator.share({
-                    title: '${title}',
-                    url: '${url}'
-                }).then(() => {
-                    console.log('Thanks for sharing!');
-                })
-                    .catch(console.error);
-            } else {
-
-            }
-        })
-    </script>
 </head>
 
 <body class="convertflow-page">
@@ -4195,6 +4173,8 @@
                 }
             </style>
 
+
+
             <div data-cta-id="160882" data-variant-id="210935" data-variant-variation="a" id="cta_160882"
                 class="cf-page- cf-has-transitions cf-is-hidden" style="margin-left: auto; margin-right: auto;">
                 <div class="cf-container cf-row cf-outer-center">
@@ -4938,7 +4918,9 @@
                                                             WakeUp Cups Desktop</button></p>
 
                                                     <p class="result"></p>
-
+                                                    
+                                                    <div><a href="https://www.google.com/" class="button share-button w-button">share the recipe</a></div>
+                                                    
                                                     <style>
                                                         #cta_160882 .cf-element[data-element-id="5229395"] .cf-text-element {}
 
@@ -5775,6 +5757,7 @@
 
                                                     <p class="result"></p>
 
+                                                    <div><a href="https://www.google.com/" class="button share-button w-button">share the recipe</a></div>
 
                                                     <style>
                                                         #cta_160882 .cf-element[data-element-id="5229403"] .cf-text-element {}
@@ -7720,13 +7703,13 @@
 
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
-                                                                w[l] = w[l] || []; w[l].push({
-                                                                    'gtm.start':
-                                                                        new Date().getTime(), event: 'gtm.js'
-                                                                }); var f = d.getElementsByTagName(s)[0],
-                                                                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                                                                        'https://gtm.wakeupcups.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-                                                            })(window, document, 'script', 'dataLayer', 'GTM-W9WVS3GW');</script>
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://gtm.wakeupcups.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-W9WVS3GW');</script>
     <!-- End Google Tag Manager -->
 
     <!-- Google Tag Manager (noscript) -->
@@ -8419,6 +8402,28 @@
             </div>
         </div>
     </div>
+    <script>
+        const shareButton = document.querySelector('button');
+        const overlay = document.querySelector('.overlay');
+        const shareModal = document.querySelector('.share');
+
+        const title = window.document.title;
+        const url = window.document.location.href;
+
+        shareButton.addEventListener('click', () => {
+            if (navigator.share) {
+                navigator.share({
+                    title: '${title}',
+                    url: '${url}'
+                }).then(() => {
+                    console.log('Thanks for sharing!');
+                })
+                    .catch(console.error);
+            } else {
+
+            }
+        })
+    </script>
     <script type="text/javascript"
         id="">(function (a, e, b, f, g, c, d) { a[b] = a[b] || function () { (a[b].q = a[b].q || []).push(arguments) }; c = e.createElement(f); c.async = 1; c.src = "https://www.clarity.ms/tag/" + g + "?ref\x3dgtm2"; d = e.getElementsByTagName(f)[0]; d.parentNode.insertBefore(c, d) })(window, document, "clarity", "script", "l0svi0nlyx");</script>
     <script type="text/javascript" id="">(function (a, d, e, f, g, b, c) { a.visitorGlobalObjectAlias = f; a[a.visitorGlobalObjectAlias] = a[a.visitorGlobalObjectAlias] || function () { (a[a.visitorGlobalObjectAlias].q = a[a.visitorGlobalObjectAlias].q || []).push(arguments) }; a[a.visitorGlobalObjectAlias].l = (new Date).getTime(); b = d.createElement("script"); b.src = e; b.async = !0; c = d.getElementsByTagName("script")[0]; c.parentNode.insertBefore(b, c) })(window, document, "https://diffuser-cdn.app-us1.com/diffuser/diffuser.js", "vgo"); vgo("setAccount", "802016801");
@@ -8432,6 +8437,72 @@
         id="">fbq("track", google_tag_manager["rm"]["177468367"](16), { currency: google_tag_manager["rm"]["177468367"](17), contents: google_tag_manager["rm"]["177468367"](18), order_id: google_tag_manager["rm"]["177468367"](19), value: google_tag_manager["rm"]["177468367"](20) }, { eventID: google_tag_manager["rm"]["177468367"](22) });</script>
     <div data-clarity-area-map-div="1" id="clarity-live-widget-container" class="normalized-15 widgetContainer-16">
     </div>
+      <script>
+        const shareButtons = document.querySelectorAll('.share-button')
+        if (shareButtons.length) {
+          shareButtons.forEach((shareButton) => {
+            if (navigator.share) {
+              shareButton.addEventListener('click', async (event) => {
+                const itemContainer = event.target.closest('.item-container')
+                const shareData = {}
+
+                const itemTitle = findFirstChildByClass(itemContainer, 'item-title')
+                if (itemTitle) {
+                  shareData.title = itemTitle.textContent
+                }
+
+                const itemText = findFirstChildByClass(itemContainer, 'item-text')
+                if (itemText) {
+                  shareData.text = itemText.textContent
+                }
+
+                const itemUrl = findFirstChildByClass(itemContainer, 'item-url')
+                if (itemUrl) {
+                  shareData.url = itemUrl.href
+                } else {
+                  shareData.url = window.location.href
+                }
+
+                try {
+                  await navigator.share(shareData)
+                } catch (err) {
+                  console.log(err)
+                }
+              })
+            } else {
+              // true fallback needed!
+              console.log('navigator.share is undefined')
+              shareButton.style.display = 'none'
+            }
+          })
+        } else {
+          console.log("No elements with '.share-button' class found!");
+        }
+
+        function findFirstChildByClass(element, className) {
+          let foundElement = null,
+            found;
+
+          function recurse(element, className, found) {
+            for (let i = 0; i < element.childNodes.length && !found; i++) {
+              let el = element.childNodes[i];
+              let classes = el.className != undefined ? el.className.split(" ") : [];
+              for (let j = 0, jl = classes.length; j < jl; j++) {
+                if (classes[j] == className) {
+                  found = true;
+                  foundElement = element.childNodes[i];
+                  break;
+                }
+              }
+              if (found)
+                break;
+              recurse(element.childNodes[i], className, found);
+            }
+          }
+          recurse(element, className, false);
+          return foundElement;
+        }
+      </script>
 </body>
 
 </html>
