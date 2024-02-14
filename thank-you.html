@@ -4918,23 +4918,17 @@
                                                     <p class="result"></p>
 
                                                     <script>
-                                                        let shareData = {
-                                                            title: 'WakeUp Cups',
-                                                            text: 'Wake up better every day with WakeUp Cups',
-                                                            url: 'https://go.wakeupcups.com/prelaunch?utm_source=shareButton',
-                                                        }
-
-                                                        const btn = document.querySelector('button');
-                                                        const resultPara = document.querySelector('.result');
-
-                                                        btn.addEventListener('click', () => {
-                                                            navigator.share(shareData)
-                                                                .then(() =>
-                                                                    resultPara.textContent = 'Thanks for sharing!'
-                                                                )
-                                                                .catch((e) =>
-                                                                    resultPara.textContent = 'Error: ' + e
-                                                                )
+                                                        buttonElement.addEventListener("click", async () => {
+                                                            try {
+                                                                await navigator.share({
+                                                                    title: "WakeUp Cups",
+                                                                    text: "Wake up better every day with WakeUp Cups",
+                                                                    url: "https://go.wakeupcups.com/prelaunch?utm_source=shareButton",
+                                                                });
+                                                                console.log("Data was shared successfully");
+                                                            } catch (err) {
+                                                                console.error("error:", err.message);
+                                                            }
                                                         });
                                                     </script>
                                                     <style>
@@ -5774,23 +5768,17 @@
                                                     <p class="result"></p>
 
                                                     <script>
-                                                        let shareData = {
-                                                            title: 'WakeUp Cups',
-                                                            text: 'Wake up better every day with WakeUp Cups',
-                                                            url: 'https://go.wakeupcups.com/prelaunch?utm_source=shareButton',
-                                                        }
-
-                                                        const btn = document.querySelector('button');
-                                                        const resultPara = document.querySelector('.result');
-
-                                                        btn.addEventListener('click', () => {
-                                                            navigator.share(shareData)
-                                                                .then(() =>
-                                                                    resultPara.textContent = 'Thanks for sharing!'
-                                                                )
-                                                                .catch((e) =>
-                                                                    resultPara.textContent = 'Error: ' + e
-                                                                )
+                                                        buttonElement.addEventListener("click", async () => {
+                                                            try {
+                                                                await navigator.share({
+                                                                    title: "WakeUp Cups",
+                                                                    text: "Wake up better every day with WakeUp Cups",
+                                                                    url: "https://go.wakeupcups.com/prelaunch?utm_source=shareButton",
+                                                                });
+                                                                console.log("Data was shared successfully");
+                                                            } catch (err) {
+                                                                console.error("error:", err.message);
+                                                            }
                                                         });
                                                     </script>
                                                     <style>
