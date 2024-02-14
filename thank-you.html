@@ -4911,14 +4911,16 @@
                                                             possible.<br><br>If you know of anyone that might want to
                                                             reserve their WakeUp Cup too, please spread the word!</p>
                                                     </div>
-                                                    <p><button>Share WakeUp Cups</button></p>
+                                                    <p><button
+                                                            style="font-family: Montserrat, sans-serif !important; font-weight: 700; background-color: #5B17C9; border: none; color: white; padding: 25px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 24px; border-radius: 100px 100px 100px 100px !important;">Share
+                                                            WakeUp Cups</button></p>
 
                                                     <p class="result"></p>
 
                                                     <script>
                                                         let shareData = {
                                                             title: 'WakeUp Cups',
-                                                            text: 'Check out the best alarm clock ever made',
+                                                            text: 'Wake up better every day with WakeUp Cups',
                                                             url: 'https://go.wakeupcups.com/prelaunch?utm_source=shareButton',
                                                         }
 
@@ -4928,10 +4930,10 @@
                                                         btn.addEventListener('click', () => {
                                                             navigator.share(shareData)
                                                                 .then(() =>
-                                                                    resultPara.textContent = 'Shared successfully'
+                                                                    resultPara.textContent = 'Thanks for sharing!'
                                                                 )
                                                                 .catch((e) =>
-                                                                    resultPara.textContent = 'That didn\'t work for some reason - try copying and pasting this link: go.wakeupcups.com/prelaunch'
+                                                                    resultPara.textContent = 'Error: ' + e
                                                                 )
                                                         });
                                                     </script>
@@ -5765,14 +5767,16 @@
                                                             you know of anyone that might want to reserve their WakeUp
                                                             Cup too, please spread the word!</p>
                                                     </div>
-                                                    <p><button>Share WakeUp Cups</button></p>
+                                                    <p><button
+                                                            style="font-family: Montserrat, sans-serif !important; font-weight: 700; background-color: #5B17C9; border: none; color: white; padding: 25px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 24px; border-radius: 100px 100px 100px 100px !important;">Share
+                                                            WakeUp Cups</button></p>
 
                                                     <p class="result"></p>
 
                                                     <script>
                                                         let shareData = {
                                                             title: 'WakeUp Cups',
-                                                            text: 'Check out the best alarm clock ever made',
+                                                            text: 'Wake up better every day with WakeUp Cups',
                                                             url: 'https://go.wakeupcups.com/prelaunch?utm_source=shareButton',
                                                         }
 
@@ -5782,10 +5786,10 @@
                                                         btn.addEventListener('click', () => {
                                                             navigator.share(shareData)
                                                                 .then(() =>
-                                                                    resultPara.textContent = 'Shared successfully'
+                                                                    resultPara.textContent = 'Thanks for sharing!'
                                                                 )
                                                                 .catch((e) =>
-                                                                    resultPara.textContent = 'That didn\'t work for some reason - try copying and pasting this link: go.wakeupcups.com/prelaunch'
+                                                                    resultPara.textContent = 'Error: ' + e
                                                                 )
                                                         });
                                                     </script>
