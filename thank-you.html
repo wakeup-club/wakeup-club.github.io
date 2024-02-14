@@ -4918,9 +4918,11 @@
                                                             WakeUp Cups Desktop</button></p>
 
                                                     <p class="result"></p>
-                                                    
-                                                    <div><a href="https://www.google.com/" class="button share-button w-button">share the recipe</a></div>
-                                                    
+
+                                                    <div><a href="https://www.google.com/"
+                                                            class="button share-button w-button">share the recipe</a>
+                                                    </div>
+
                                                     <style>
                                                         #cta_160882 .cf-element[data-element-id="5229395"] .cf-text-element {}
 
@@ -5751,13 +5753,11 @@
                                                             you know of anyone that might want to reserve their WakeUp
                                                             Cup too, please spread the word!</p>
                                                     </div>
-                                                    <p><button
+                                                    <p><a href="#"><button class="button share-button w-button"
                                                             style="font-family: Montserrat, sans-serif !important; font-weight: 700; background-color: #5B17C9; border: none; color: white; padding: 25px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 24px; border-radius: 100px 100px 100px 100px !important;">Share
-                                                            WakeUp Cups Mobile</button></p>
+                                                            WakeUp Cups Mobile</button></a></p>
 
                                                     <p class="result"></p>
-
-                                                    <div><a href="https://www.google.com/" class="button share-button w-button">share the recipe</a></div>
 
                                                     <style>
                                                         #cta_160882 .cf-element[data-element-id="5229403"] .cf-text-element {}
@@ -8437,72 +8437,72 @@
         id="">fbq("track", google_tag_manager["rm"]["177468367"](16), { currency: google_tag_manager["rm"]["177468367"](17), contents: google_tag_manager["rm"]["177468367"](18), order_id: google_tag_manager["rm"]["177468367"](19), value: google_tag_manager["rm"]["177468367"](20) }, { eventID: google_tag_manager["rm"]["177468367"](22) });</script>
     <div data-clarity-area-map-div="1" id="clarity-live-widget-container" class="normalized-15 widgetContainer-16">
     </div>
-      <script>
+    <script>
         const shareButtons = document.querySelectorAll('.share-button')
         if (shareButtons.length) {
-          shareButtons.forEach((shareButton) => {
-            if (navigator.share) {
-              shareButton.addEventListener('click', async (event) => {
-                const itemContainer = event.target.closest('.item-container')
-                const shareData = {}
+            shareButtons.forEach((shareButton) => {
+                if (navigator.share) {
+                    shareButton.addEventListener('click', async (event) => {
+                        const itemContainer = event.target.closest('.item-container')
+                        const shareData = {}
 
-                const itemTitle = findFirstChildByClass(itemContainer, 'item-title')
-                if (itemTitle) {
-                  shareData.title = itemTitle.textContent
-                }
+                        const itemTitle = findFirstChildByClass(itemContainer, 'item-title')
+                        if (itemTitle) {
+                            shareData.title = itemTitle.textContent
+                        }
 
-                const itemText = findFirstChildByClass(itemContainer, 'item-text')
-                if (itemText) {
-                  shareData.text = itemText.textContent
-                }
+                        const itemText = findFirstChildByClass(itemContainer, 'item-text')
+                        if (itemText) {
+                            shareData.text = itemText.textContent
+                        }
 
-                const itemUrl = findFirstChildByClass(itemContainer, 'item-url')
-                if (itemUrl) {
-                  shareData.url = itemUrl.href
+                        const itemUrl = findFirstChildByClass(itemContainer, 'item-url')
+                        if (itemUrl) {
+                            shareData.url = itemUrl.href
+                        } else {
+                            shareData.url = window.location.href
+                        }
+
+                        try {
+                            await navigator.share(shareData)
+                        } catch (err) {
+                            console.log(err)
+                        }
+                    })
                 } else {
-                  shareData.url = window.location.href
+                    // true fallback needed!
+                    console.log('navigator.share is undefined')
+                    shareButton.style.display = 'none'
                 }
-
-                try {
-                  await navigator.share(shareData)
-                } catch (err) {
-                  console.log(err)
-                }
-              })
-            } else {
-              // true fallback needed!
-              console.log('navigator.share is undefined')
-              shareButton.style.display = 'none'
-            }
-          })
+            })
         } else {
-          console.log("No elements with '.share-button' class found!");
+            console.log("No elements with '.share-button' class found!");
         }
 
         function findFirstChildByClass(element, className) {
-          let foundElement = null,
-            found;
+            let foundElement = null,
+                found;
 
-          function recurse(element, className, found) {
-            for (let i = 0; i < element.childNodes.length && !found; i++) {
-              let el = element.childNodes[i];
-              let classes = el.className != undefined ? el.className.split(" ") : [];
-              for (let j = 0, jl = classes.length; j < jl; j++) {
-                if (classes[j] == className) {
-                  found = true;
-                  foundElement = element.childNodes[i];
-                  break;
+            function recurse(element, className, found) {
+                for (let i = 0; i < element.childNodes.length && !found; i++) {
+                    let el = element.childNodes[i];
+                    let classes = el.className != undefined ? el.className.split(" ") : [];
+                    for (let j = 0, jl = classes.length; j < jl; j++) {
+                        if (classes[j] == className) {
+                            found = true;
+                            foundElement = element.childNodes[i];
+                            break;
+                        }
+                    }
+                    if (found)
+                        break;
+                    recurse(element.childNodes[i], className, found);
                 }
-              }
-              if (found)
-                break;
-              recurse(element.childNodes[i], className, found);
             }
-          }
-          recurse(element, className, false);
-          return foundElement;
+            recurse(element, className, false);
+            return foundElement;
         }
-      </script>
+    </script>
 </body>
 
 </html>
